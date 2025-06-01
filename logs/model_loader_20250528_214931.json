@@ -1,0 +1,10 @@
+{
+    "DummyModel": {
+        "success": true,
+        "name": "DummyModel",
+        "has_predict": true,
+        "has_fit": false,
+        "predict_successful": true,
+        "execution_time": 0.0
+    }
+}

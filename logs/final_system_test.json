@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-05-29T19:35:09.474937",
+  "tests": {
+    "api_connectivity": true,
+    "environment_management": true,
+    "trading_engine": true,
+    "system_validation": false,
+    "core_apis": true,
+    "dashboard_ui": true,
+    "safety_features": false
+  },
+  "summary": {
+    "passed_tests": 5,
+    "total_tests": 7,
+    "success_rate": 71.42857142857143,
+    "overall_status": "PARTIAL"
+  }
+}

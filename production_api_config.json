@@ -1,0 +1,66 @@
+{
+  "api_configuration": {
+    "bybit": {
+      "production": {
+        "base_url": "https://api.bybit.com",
+        "ws_url": "wss://stream.bybit.com/v5/public",
+        "endpoints": {
+          "server_time": "/v5/market/time",
+          "account_balance": "/v5/account/wallet-balance",
+          "market_data": "/v5/market/tickers",
+          "kline": "/v5/market/kline",
+          "orderbook": "/v5/market/orderbook",
+          "positions": "/v5/position/list"
+        }
+      },
+      "testnet": {
+        "base_url": "https://api-testnet.bybit.com", 
+        "ws_url": "wss://stream-testnet.bybit.com/v5/public",
+        "endpoints": {
+          "server_time": "/v5/market/time",
+          "account_balance": "/v5/account/wallet-balance",
+          "market_data": "/v5/market/tickers",
+          "kline": "/v5/market/kline",
+          "orderbook": "/v5/market/orderbook",
+          "positions": "/v5/position/list"
+        }
+      }
+    }
+  },
+  "dashboard_configuration": {
+    "data_refresh_interval": 5,
+    "max_retries": 3,
+    "timeout": 10,
+    "fallback_enabled": true,
+    "rate_limits": {
+      "requests_per_minute": 600,
+      "burst_limit": 10
+    }
+  },
+  "symbols": {
+    "crypto": [
+      "BTCUSDT",
+      "ETHUSDT", 
+      "ADAUSDT",
+      "DOTUSDT",
+      "SOLUSDT",
+      "LINKUSDT",
+      "AVAXUSDT",
+      "MATICUSDT"
+    ],
+    "categories": ["spot", "linear", "inverse"]
+  },
+  "data_sources": {
+    "primary": "bybit_production",
+    "fallback": "bybit_testnet",
+    "backup": "simulated"
+  },
+  "monitoring": {
+    "health_check_interval": 30,
+    "alert_thresholds": {
+      "api_latency_ms": 1000,
+      "error_rate_percent": 5,
+      "connection_timeout_seconds": 30
+    }
+  }
+}

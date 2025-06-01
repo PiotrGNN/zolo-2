@@ -1,0 +1,188 @@
+{
+  "timestamp": "2025-05-29T18:31:58.438487",
+  "core_components": {
+    "ai": {
+      "path": "C:\\Users\\piotr\\Desktop\\Zol0\\ZoL0-master\\core\\ai",
+      "files": [
+        "model_exchange.py",
+        "rl_trader.py"
+      ],
+      "submodules": []
+    },
+    "backtest": {
+      "path": "C:\\Users\\piotr\\Desktop\\Zol0\\ZoL0-master\\core\\backtest",
+      "files": [
+        "engine.py"
+      ],
+      "submodules": []
+    },
+    "components": {
+      "path": "C:\\Users\\piotr\\Desktop\\Zol0\\ZoL0-master\\core\\components",
+      "files": [
+        "__init__.py"
+      ],
+      "submodules": []
+    },
+    "database": {
+      "path": "C:\\Users\\piotr\\Desktop\\Zol0\\ZoL0-master\\core\\database",
+      "files": [
+        "manager.py",
+        "__init__.py"
+      ],
+      "submodules": []
+    },
+    "exchange": {
+      "path": "C:\\Users\\piotr\\Desktop\\Zol0\\ZoL0-master\\core\\exchange",
+      "files": [
+        "connector.py",
+        "types.py",
+        "__init__.py"
+      ],
+      "submodules": []
+    },
+    "marketplace": {
+      "path": "C:\\Users\\piotr\\Desktop\\Zol0\\ZoL0-master\\core\\marketplace",
+      "files": [
+        "registry.py"
+      ],
+      "submodules": []
+    },
+    "market_data": {
+      "path": "C:\\Users\\piotr\\Desktop\\Zol0\\ZoL0-master\\core\\market_data",
+      "files": [
+        "cache.py",
+        "indicators.py",
+        "manager.py",
+        "__init__.py"
+      ],
+      "submodules": []
+    },
+    "monitoring": {
+      "path": "C:\\Users\\piotr\\Desktop\\Zol0\\ZoL0-master\\core\\monitoring",
+      "files": [
+        "autoswitch.py",
+        "metrics.py",
+        "__init__.py"
+      ],
+      "submodules": []
+    },
+    "portfolio": {
+      "path": "C:\\Users\\piotr\\Desktop\\Zol0\\ZoL0-master\\core\\portfolio",
+      "files": [
+        "manager.py",
+        "__init__.py"
+      ],
+      "submodules": []
+    },
+    "risk": {
+      "path": "C:\\Users\\piotr\\Desktop\\Zol0\\ZoL0-master\\core\\risk",
+      "files": [
+        "manager.py",
+        "__init__.py"
+      ],
+      "submodules": []
+    },
+    "strategies": {
+      "path": "C:\\Users\\piotr\\Desktop\\Zol0\\ZoL0-master\\core\\strategies",
+      "files": [
+        "adaptive_ai.py",
+        "arbitrage.py",
+        "base.py",
+        "breakout.py",
+        "manager.py",
+        "mean_reversion.py",
+        "momentum.py",
+        "trend_following.py",
+        "__init__.py"
+      ],
+      "submodules": []
+    },
+    "trading": {
+      "path": "C:\\Users\\piotr\\Desktop\\Zol0\\ZoL0-master\\core\\trading",
+      "files": [
+        "engine.py",
+        "executor.py",
+        "handler.py",
+        "__init__.py"
+      ],
+      "submodules": []
+    },
+    "utils": {
+      "path": "C:\\Users\\piotr\\Desktop\\Zol0\\ZoL0-master\\core\\utils",
+      "files": [
+        "alerts.py",
+        "logger.py"
+      ],
+      "submodules": []
+    }
+  },
+  "strategies": {
+    "total_count": 6,
+    "strategy_list": [
+      "AdaptiveAIStrategy",
+      "ArbitrageStrategy",
+      "BreakoutStrategy",
+      "MeanReversionStrategy",
+      "MomentumStrategy",
+      "TrendFollowingStrategy"
+    ],
+    "loaded_successfully": true,
+    "individual_tests": {
+      "AdaptiveAIStrategy": {
+        "status": "error",
+        "error": "AdaptiveAIStrategy.analyze() missing 2 required positional arguments: 'indicators' and 'timeframe'"
+      },
+      "ArbitrageStrategy": {
+        "status": "error",
+        "error": "ArbitrageStrategy.analyze() missing 2 required positional arguments: 'indicators' and 'timeframe'"
+      },
+      "BreakoutStrategy": {
+        "status": "error",
+        "error": "BreakoutStrategy.analyze() missing 2 required positional arguments: 'indicators' and 'timeframe'"
+      },
+      "MeanReversionStrategy": {
+        "status": "error",
+        "error": "MeanReversionStrategy.analyze() missing 2 required positional arguments: 'indicators' and 'timeframe'"
+      },
+      "MomentumStrategy": {
+        "status": "error",
+        "error": "MomentumStrategy.analyze() missing 2 required positional arguments: 'indicators' and 'timeframe'"
+      },
+      "TrendFollowingStrategy": {
+        "status": "error",
+        "error": "TrendFollowingStrategy.analyze() missing 2 required positional arguments: 'indicators' and 'timeframe'"
+      }
+    }
+  },
+  "ai_models": {
+    "rl_trader_available": true,
+    "model_exchange_available": true
+  },
+  "trading_engine": {
+    "available": false,
+    "import_error": "cannot import name 'TradeExecutor' from 'core.trading.executor' (C:\\Users\\piotr\\Desktop\\Zol0\\ZoL0-master\\core\\trading\\executor.py)"
+  },
+  "portfolio": {
+    "manager_available": true
+  },
+  "risk_management": {
+    "manager_available": true
+  },
+  "monitoring": {
+    "available": false,
+    "import_error": "cannot import name 'SystemMetrics' from 'core.monitoring.metrics' (C:\\Users\\piotr\\Desktop\\Zol0\\ZoL0-master\\core\\monitoring\\metrics.py)"
+  },
+  "issues": [
+    "Trading engine import error: cannot import name 'TradeExecutor' from 'core.trading.executor' (C:\\Users\\piotr\\Desktop\\Zol0\\ZoL0-master\\core\\trading\\executor.py)"
+  ],
+  "recommendations": [
+    "Fix trading engine imports",
+    "Add real-time core system monitoring to dashboard",
+    "Integrate strategy performance metrics",
+    "Add AI model status monitoring",
+    "Create core system health dashboard section"
+  ],
+  "api": {
+    "error": "'NoneType' object has no attribute 'rstrip'"
+  }
+}
