@@ -1,0 +1,102 @@
+{
+  "timestamp": "2025-05-31T04:09:35.525491",
+  "results": {
+    "environment": {
+      "status": true,
+      "details": {
+        "TRADING_MODE": {
+          "value": "production",
+          "valid": true
+        },
+        "BYBIT_PRODUCTION_ENABLED": {
+          "value": "true",
+          "valid": true
+        },
+        "BYBIT_TESTNET": {
+          "value": "false",
+          "valid": true
+        },
+        "BYBIT_API_KEY": {
+          "value": "***",
+          "valid": true
+        },
+        "BYBIT_API_SECRET": {
+          "value": "***",
+          "valid": true
+        }
+      }
+    },
+    "bybit_connector": {
+      "status": true,
+      "details": {
+        "server_time": true,
+        "wallet_balance": true,
+        "data_source": "api",
+        "using_real_data": true
+      }
+    },
+    "production_manager": {
+      "status": true,
+      "details": {
+        "production_mode": true,
+        "has_credentials": true,
+        "connected": true,
+        "data_source": "unknown",
+        "using_real_data": true
+      }
+    },
+    "configuration_files": {
+      "status": true,
+      "details": {
+        "production_api_config.json": {
+          "status": true,
+          "type": "production"
+        },
+        "production_config.json": {
+          "status": true,
+          "type": "production"
+        },
+        ".env": {
+          "status": true,
+          "content_checked": true
+        }
+      }
+    },
+    "dashboard_files": {
+      "status": true,
+      "details": {
+        "unified_trading_dashboard.py": {
+          "status": true,
+          "has_production_manager": true,
+          "has_bybit_connector": false,
+          "has_real_data_integration": true
+        },
+        "enhanced_dashboard.py": {
+          "status": true,
+          "has_production_manager": true,
+          "has_bybit_connector": false,
+          "has_real_data_integration": true
+        },
+        "master_control_dashboard.py": {
+          "status": true,
+          "has_production_manager": true,
+          "has_bybit_connector": false,
+          "has_real_data_integration": true
+        },
+        "advanced_trading_analytics.py": {
+          "status": true,
+          "has_production_manager": true,
+          "has_bybit_connector": true,
+          "has_real_data_integration": true
+        }
+      }
+    }
+  },
+  "summary": {
+    "total_tests": 5,
+    "passed_tests": 5,
+    "percentage": 100.0,
+    "errors": [],
+    "warnings": []
+  }
+}

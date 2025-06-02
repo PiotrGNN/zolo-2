@@ -1,0 +1,101 @@
+{
+  "timestamp": "2025-05-29T18:53:51.618192",
+  "success_rate": 100.0,
+  "passed_tests": 11,
+  "total_tests": 11,
+  "results": {
+    "/core/status": {
+      "status": "\u2705 PASS",
+      "response_time": 2.043847,
+      "data_size": 1449
+    },
+    "/core/strategies": {
+      "status": "\u2705 PASS",
+      "response_time": 2.074687,
+      "data_size": 250
+    },
+    "/core/ai-models": {
+      "status": "\u2705 PASS",
+      "response_time": 2.040554,
+      "data_size": 284
+    },
+    "/core/system-metrics": {
+      "status": "\u2705 PASS",
+      "response_time": 2.149738,
+      "data_size": 308
+    },
+    "/core/health": {
+      "status": "\u2705 PASS",
+      "response_time": 2.150437,
+      "data_size": 331
+    },
+    "/api/trading-signals": {
+      "status": "\u2705 PASS",
+      "response_time": 2.050617,
+      "data_size": 542
+    },
+    "/api/portfolio": {
+      "status": "\u2705 PASS",
+      "response_time": 2.036874,
+      "data_size": 551
+    },
+    "health_check": {
+      "components_healthy": 6,
+      "details": {
+        "ai_models": true,
+        "monitoring": true,
+        "portfolio": true,
+        "risk_management": true,
+        "strategies": true,
+        "trading_engine": true
+      },
+      "health_percentage": 100.0,
+      "overall_status": "healthy",
+      "timestamp": "2025-05-29T18:53:45.400254",
+      "total_components": 6
+    },
+    "strategies": {
+      "count": 6,
+      "loaded_successfully": true,
+      "status": "active",
+      "strategies": [
+        "AdaptiveAIStrategy",
+        "ArbitrageStrategy",
+        "BreakoutStrategy",
+        "MeanReversionStrategy",
+        "MomentumStrategy",
+        "TrendFollowingStrategy"
+      ]
+    },
+    "ai_models": {
+      "components": {
+        "anomaly_detection": "active",
+        "model_training": "active",
+        "pattern_recognition": "active",
+        "sentiment_analysis": "active"
+      },
+      "model_list": [
+        "dummy_model.py"
+      ],
+      "rl_trader_available": true,
+      "status": "active",
+      "total_models": 28
+    },
+    "performance": {
+      "boot_time": 1748467104.4880707,
+      "cpu_percent": 11.7,
+      "disk": {
+        "free": 55471308800,
+        "percent": 89.1,
+        "total": 510844203008
+      },
+      "memory": {
+        "available": 6202474496,
+        "percent": 63.2,
+        "total": 16831893504
+      },
+      "processes": 309,
+      "timestamp": "2025-05-29T18:53:51.613978"
+    }
+  }
+}

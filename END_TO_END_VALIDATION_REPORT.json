@@ -1,0 +1,63 @@
+{
+  "validation_timestamp": "2025-05-31T17:31:33.370830",
+  "test_results": {
+    "enhanced_dashboard_api": {
+      "/health": {
+        "status_code": 200,
+        "success": true,
+        "response_size": 132
+      },
+      "/api/portfolio": {
+        "status_code": 200,
+        "success": true,
+        "response_size": 648
+      },
+      "/core/status": {
+        "status_code": 200,
+        "success": true,
+        "response_size": 1449
+      }
+    },
+    "unified_dashboard": {
+      "accessible": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8512): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F4F5325990>: Failed to establish a new connection: [WinError 10061] Nie mo\u017cna nawi\u0105za\u0107 po\u0142\u0105czenia, poniewa\u017c komputer docelowy aktywnie go odmawia'))"
+    },
+    "production_data_manager": {
+      "initialized": true,
+      "account_balance": {
+        "source": "production_api",
+        "success": true
+      },
+      "market_data": {
+        "source": "production_api",
+        "success": true
+      }
+    },
+    "unified_integration": {
+      "initialized": true,
+      "performance_data_source": "production_api",
+      "has_production_manager": true,
+      "data_sample": {
+        "total_profit": -10000.0,
+        "active_bots": 0,
+        "win_rate": 65.5,
+        "daily_trades": 0,
+        "max_drawdown": -2.5,
+        "sharpe_ratio": 1.25,
+        "data_source": "production_api",
+        "account_balance": 0.0,
+        "available_balance": 0.0
+      }
+    }
+  },
+  "summary": {
+    "enhanced_dashboard_api": false,
+    "unified_dashboard_accessible": false,
+    "production_data_manager": true,
+    "unified_integration": true,
+    "real_data_integration": true,
+    "data_sources_detected": [
+      "production_api"
+    ]
+  }
+}

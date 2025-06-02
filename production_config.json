@@ -1,0 +1,7 @@
+{
+  "migration_date": "2025-05-30T00:58:37.056833",
+  "environment": "production",
+  "bybit_production_enabled": true,
+  "bybit_testnet": false,
+  "migration_status": "completed"
+}

@@ -1,0 +1,10 @@
+{
+    "DummyModel": {
+        "success": false,
+        "name": "DummyModel",
+        "has_predict": true,
+        "has_fit": false,
+        "predict_successful": false,
+        "predict_error": "DummyModel.predict() missing 1 required positional argument: 'x'"
+    }
+}
